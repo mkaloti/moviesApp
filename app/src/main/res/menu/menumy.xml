@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Item"
+        android:icon="@drawable/movie"
+        android:id="@+id/icon"
+        app:showAsAction="always" />
+    <item android:title="Exit"
+        android:id="@+id/exit" />
+    <item android:title="delete all movies"
+        android:id="@+id/delete" />
+</menu>

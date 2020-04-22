@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Film library</string>
+    <string name="enter_movie_name">Enter movie name</string>
+    <string name="enter_movie_details">Enter movie details</string>
+    <string name="movie_url">Movie URL</string>
+    <string name="show">Show</string>
+    <string name="search">Search</string>
+    <string name="textview">TextView</string>
+</resources>

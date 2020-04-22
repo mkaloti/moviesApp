@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_activity"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jbt.filmlibrary.edit_activity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="245dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/subject"
+                android:hint="Enter movie name"
+                android:textColorHint="#805f5c5c"
+                android:textColor="@android:color/black"
+                android:background="@android:color/background_light"
+                android:layout_weight="0.34" />
+
+            <RatingBar
+                android:layout_width="377dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                android:numStars="5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/body"
+                android:layout_weight="1"
+                android:hint="Enter movie details"
+                android:textColorHint="#805f5c5c"
+                android:textColor="@android:color/black"
+                android:background="@android:color/background_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="107dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/url"
+                android:hint="Movie URL"
+                android:textColorHint="#805f5c5c"
+                android:textColor="@android:color/black"
+                android:background="@android:color/background_light"
+                android:layout_weight="0.89" />
+
+            <Button
+                android:text="Show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showbtn"
+                android:background="#ff4723"
+                android:radius="20dp"
+                android:textColor="@android:color/white"
+                android:layout_weight="0.10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light"
+            android:layout_weight="1.10">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/movie"
+                android:id="@+id/imageView3"
+                android:layout_marginLeft="110dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:text="OK"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/okbtn"
+                android:layout_weight="0.09"
+                android:background="#ff4723"
+                android:radius="10dp"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:text="CANCEL"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:layout_weight="0.08"
+                android:background="#ff4723"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
